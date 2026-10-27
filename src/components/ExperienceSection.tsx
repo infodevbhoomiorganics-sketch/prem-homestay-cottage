@@ -5,7 +5,7 @@ import balconyView from "@/assets/balcony-view.jpg";
 
 const THEMES = [
   {
-    icon: TreeIcon,
+    icon: TreePine,
     title: "A rural setting in Village Hawani",
     text: "Wake up in the quiet of a Himachali village, where daily life moves at the pace of the fields and hills around it.",
   },
@@ -26,9 +26,8 @@ const THEMES = [
   },
 ];
 
-import { TreePine as TreeIcon } from "lucide-react";
-
 export default function ExperienceSection() {
+
   return (
     <section id="experience" className="scroll-mt-24 bg-cream py-16 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
