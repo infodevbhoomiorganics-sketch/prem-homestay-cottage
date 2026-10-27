@@ -57,27 +57,28 @@ export function validateEnquiry(form: EnquiryForm): Record<string, string> {
   const errors: Record<string, string> = {};
 
   if (!form.name.trim()) {
-    errors.name = "Please enter your name.";
+    errors["name"] = "Please enter your name.";
   }
 
   const digits = form.phone.replace(/\D/g, "");
   if (!digits) {
-    errors.phone = "Please enter your phone number.";
+    errors["phone"] = "Please enter your phone number.";
   } else if (digits.length < 10 || digits.length > 15) {
-    errors.phone = "Enter a valid phone number with 10–15 digits.";
+    errors["phone"] = "Enter a valid phone number with 10–15 digits.";
   }
 
   if (!form.checkIn) {
-    errors.checkIn = "Please choose a check-in date.";
+    errors["checkIn"] = "Please choose a check-in date.";
   } else if (form.checkIn < todayISO()) {
-    errors.checkIn = "Check-in cannot be in the past.";
+    errors["checkIn"] = "Check-in cannot be in the past.";
   }
 
   if (!form.checkOut) {
-    errors.checkOut = "Please choose a check-out date.";
+    errors["checkOut"] = "Please choose a check-out date.";
   } else if (form.checkIn && form.checkOut <= form.checkIn) {
-    errors.checkOut = "Check-out must be after check-in.";
+    errors["checkOut"] = "Check-out must be after check-in.";
   }
+
 
   return errors;
 }

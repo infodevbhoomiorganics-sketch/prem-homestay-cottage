@@ -9,7 +9,7 @@ import {
   type EnquiryForm,
 } from "@/lib/homestay";
 
-function FieldError({ message }: { message?: string }) {
+function FieldError({ message }: { message?: string | undefined }) {
   if (!message) return null;
   return (
     <p role="alert" className="mt-1.5 text-xs font-medium text-destructive">
@@ -17,6 +17,7 @@ function FieldError({ message }: { message?: string }) {
     </p>
   );
 }
+
 
 const inputClass =
   "mt-1.5 w-full rounded-xl border border-input bg-card px-4 py-2.5 text-sm text-foreground placeholder:text-muted-foreground/70 focus:border-ring focus:ring-2 focus:ring-ring/40 focus-visible:outline-none";
