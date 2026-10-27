@@ -1,4 +1,4 @@
-import { Compass, Lake, Route, TreePine } from "lucide-react";
+import { Compass, Route, TreePine, Waves } from "lucide-react";
 import villageFields from "@/assets/village-fields.jpg";
 import balconyView from "@/assets/balcony-view.jpg";
 
@@ -20,7 +20,7 @@ const THEMES = [
     text: "Traveling through Himachal Pradesh? A pause near Sundernagar can make the road to Kullu and Manali more relaxed.",
   },
   {
-    icon: Lake,
+    icon: Waves,
     title: "Lakes, valleys and local surroundings",
     text: "The region around Sundernagar invites slow exploration — lakes, valleys and village paths within easy reach.",
   },
