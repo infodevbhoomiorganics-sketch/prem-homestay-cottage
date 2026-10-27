@@ -1,6 +1,7 @@
-import { Compass, Lake, Mountain, Route } from "lucide-react";
+import { Compass, Lake, Route, TreePine } from "lucide-react";
 import villageFields from "@/assets/village-fields.jpg";
 import balconyView from "@/assets/balcony-view.jpg";
+
 
 const THEMES = [
   {
